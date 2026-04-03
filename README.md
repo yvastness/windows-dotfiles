@@ -1,7 +1,9 @@
 ### winget 换源
 
+```bash
 winget source remove winget
 winget source add winget https://mirrors.ustc.edu.cn/winget-source --trust-level trusted
+```
 
 ### 修改用户文件夹名（C:\Users\xxxxx）
 

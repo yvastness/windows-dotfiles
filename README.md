@@ -1,5 +1,9 @@
+### winget 换源
 
-### 第二步：修改用户文件夹名（C:\Users\xxxxx）
+winget source remove winget
+winget source add winget https://mirrors.ustc.edu.cn/winget-source --trust-level trusted
+
+### 修改用户文件夹名（C:\Users\xxxxx）
 
 #### 新建账户迁移法
 
@@ -33,10 +37,10 @@ Write-Host "🚀 开始执行自动化安装脚本..." -ForegroundColor Green
 
 # 定义软件列表
 $packages = @(
+    "Raycast",
     "Google.Chrome",
     "2dust.v2rayN",
     "GeekUninstaller.GeekUninstaller",
-    "Yuanli.uTools",
     "Tencent.WeChat",
     "Tencent.WeType",
     "Kingsoft.WPSOffice.CN",
@@ -52,7 +56,9 @@ $packages = @(
     "Eassos.DiskGenius",
     "Rufus.Rufus",
     "Blizzard.BattleNet",
-    "Bilibili.Bilibili"
+    "Bilibili.Bilibili",
+    "WeGame"
+    
 )
 
 # 遍历安装

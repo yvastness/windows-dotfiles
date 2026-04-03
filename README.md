@@ -1,10 +1,3 @@
-### winget 换源
-
-```bash
-winget source remove winget
-winget source add winget https://mirrors.ustc.edu.cn/winget-source --trust-level trusted
-```
-
 ### 修改用户文件夹名（C:\Users\xxxxx）
 
 #### 新建账户迁移法
@@ -29,6 +22,13 @@ winget source add winget https://mirrors.ustc.edu.cn/winget-source --trust-level
 
 4.  **删除旧账户**
     *   确认新账户一切正常后，回到 **“设置”** > **“账户”** > **“其他用户”**，选中旧的那个 5 位字母的账户，点击 **“删除”**。
+
+### winget 换源
+
+```bash
+winget source remove winget
+winget source add winget https://mirrors.ustc.edu.cn/winget-source --trust-level trusted
+```
 
 ```bat
 # Windows 软件自动化部署脚本
